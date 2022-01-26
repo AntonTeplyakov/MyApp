@@ -10,6 +10,9 @@ function App() {
   ])
   // let name = 'mario'
   const handleClick = (id) =>{
+    setEvents(events.filter((event)=>{
+      return id !== event.id
+    }))
     console.log(id)
   }
   return (
